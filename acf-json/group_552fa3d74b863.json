@@ -1,0 +1,89 @@
+{
+    "key": "group_552fa3d74b863",
+    "title": "Theme Settings \/ Head Settings",
+    "fields": [
+        {
+            "key": "field_552fa3edb21a1",
+            "label": "Status",
+            "name": "wb_552fa3edb21a1",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "active": "Active",
+                "disabled": "Disabled"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "active",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_552fa43fb21a2",
+            "label": "Code",
+            "name": "wb_552fa43fb21a2",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_552fa3edb21a1",
+                        "operator": "==",
+                        "value": "active"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-settings"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1429185700
+}

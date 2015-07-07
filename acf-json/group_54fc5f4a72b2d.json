@@ -1,0 +1,65 @@
+{
+    "key": "group_54fc5f4a72b2d",
+    "title": "Theme Settings \/ Google Settings",
+    "fields": [
+        {
+            "key": "field_54fc5f58c3898",
+            "label": "Google Site Verification HTML Tag ID",
+            "name": "wb_54fc5f58c3898",
+            "type": "text",
+            "instructions": "Enter your Google Site Verification HTML Tag ID.\r\nWebBird's Verification HTML Tag ID: pqN4ueIxWXl434EYL1IWHJuIHC2E3MMDORfnw0I39U4.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "pqN4ueIxWXl434EYL1IWHJuIHC2E3MMDORfnw0I39U4",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54fc647648cc8",
+            "label": "Google Analytics Tracking ID",
+            "name": "wb_54fc647648cc8",
+            "type": "text",
+            "instructions": "Enter your Google Analytics Tracking ID.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-google-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1432142345,
+    "local": "json"
+}

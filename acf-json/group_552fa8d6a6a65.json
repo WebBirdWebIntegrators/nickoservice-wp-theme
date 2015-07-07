@@ -1,0 +1,44 @@
+{
+    "key": "group_552fa8d6a6a65",
+    "title": "Theme Settings \/ Google Settings \/ Corporate Contacts",
+    "fields": [
+        {
+            "key": "field_552fa9010a4f8",
+            "label": "Corporate Contacts Code",
+            "name": "wb_552fa9010a4f8",
+            "prefix": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<script type=\"application\/ld+json\">\r\n{ \"@context\" : \"http:\/\/schema.org\",\r\n  \"@type\" : \"Organization\",\r\n  \"url\" : \"\",\r\n  \"logo\":\"\",\r\n  \"contactPoint\" : [\r\n    { \"@type\" : \"ContactPoint\",\r\n      \"telephone\" : \"\",\r\n      \"contactType\" : \"customer service\",\r\n      \"contactOption\":\"TollFree\",\r\n      \"areaServed\":\"BE\",\r\n      \"availableLanguage\":\"Dutch\"\r\n    } ] }\r\n<\/script>",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-google-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "modified": 1429187473
+}
