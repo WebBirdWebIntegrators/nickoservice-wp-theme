@@ -16,7 +16,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,800italic,400,300,700,800' rel='stylesheet' type='text/css'>
-	
+
 	<!-- Start Favicon -->
 	<?php if( get_field('field_552f91819f538', 'option') ) { ?>
 		<link rel="shortcut icon" href="<?php echo get_field('field_552f91819f538', 'option'); ?>" type="image/x-icon">
@@ -26,38 +26,38 @@
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon-webbird.ico" type="image/x-icon">
 	<?php } ?>
 	<!-- End Favicon -->
-	
+
 	<!-- Google Site Verification -->
 	<?php if( get_field('wb_54fc5f58c3898', 'option') ) :
 		$google_html_tag_id = get_field('wb_54fc5f58c3898', 'option');
 		echo '<meta name="google-site-verification" content="' . $google_html_tag_id . '" />';
 	endif; ?>
-	
+
 	<!-- Start Global Code -->
 	<?php if( get_field('field_552fa3edb21a1', 'option') === 'active' ) :
 		echo get_field('field_552fa43fb21a2', 'option');
 	endif; ?>
 	<!-- End Global Code -->
-	
+
 	<!-- Start Page Code -->
 	<?php if( get_field('field_552fa3edb21a1') === 'active' ) :
 		echo get_field('field_552fa43fb21a2');
 	endif; ?>
 	<!-- End Page Code -->
-	
+
 	<!-- Start Google Corporate Contacts Code -->
 	<?php if( is_front_page() ) : ?>
 		<?php the_field('field_552fa9010a4f8', 'option'); ?>
 	<?php endif; ?>
 	<!-- End Google Corporate Contacts Code -->
-	
-	<?php wp_head(); ?>	
+
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
 <div id="header">
-	
+
 	<div class="hb1">
 		<div class="bp1">
 				<script type="text/javascript">
@@ -111,7 +111,7 @@
 									</li>
 								<?php endif; ?>
 							<?php } ?>
-							
+
 							<!-- Start mobile phone number -->
 							<?php if( get_field('field_545ceae654114','option') ): ?>
 								<?php if (get_field('field_548ede8895396', 'option') == 'yes') : ?>
@@ -121,10 +121,10 @@
 								<?php endif ?>
 							<?php endif; ?>
 							<!-- End mobile phone number -->
-							
+
 							<?php if( get_field('field_545c927a920fc','option') ): ?>
 								<li class="email">
-									<a href="mailto:<?php the_field('field_545c927a920fc','option'); ?>" onclick="ga('send','event','contact','click','email',0);"><?php _e('Email', ''); ?></a>	
+									<a href="mailto:<?php the_field('field_545c927a920fc','option'); ?>" onclick="ga('send','event','contact','click','email',0);"><?php _e('Email', ''); ?></a>
 								</li>
 							<?php endif; ?>
 							<li>
@@ -146,7 +146,7 @@
 						</div>
 					</div>
 					<div class="search" id="search">
-						<?php get_search_form(); ?>	
+						<?php get_search_form(); ?>
 					</div>
 					<?php {
 						$mnav = array(
@@ -227,7 +227,7 @@
 					<li class="language">Language</li>
 					<li class="social-media">
 						<ul class="social">
-				
+
 							<!-- Facebook button -->
 							<?php if( get_field('wb_545c945b914e2','option') ) : ?>
 								<li>
@@ -236,7 +236,7 @@
 									</a>
 								</li>
 							<?php endif; ?>
-							
+
 							<!-- Twitter button -->
 							<?php if( get_field('wb_545c932b4c1e4','option') ) : ?>
 								<li class="twitter">
@@ -245,7 +245,7 @@
 									</a>
 								</li>
 							<?php endif; ?>
-							
+
 							<!-- Linked button -->
 							<?php if( get_field('wb_545c94a6c6bdc','option') ) : ?>
 								<li>
@@ -254,7 +254,7 @@
 									</a>
 								</li>
 							<?php endif; ?>
-							
+
 							<!-- Google+ button -->
 							<?php if( get_field('wb_54fc529402a0b','option') ): ?>
 								<li class="twitter">
@@ -263,7 +263,7 @@
 									</a>
 								</li>
 							<?php endif; ?>
-							
+
 							<!-- Instagram button -->
 							<?php if( get_field('wb_545c94bcc6bdd','option') ): ?>
 								<li>
@@ -272,7 +272,7 @@
 									</a>
 								</li>
 							<?php endif; ?>
-							
+
 							<!-- Pinterest button -->
 							<?php if( get_field('wb_545c94ebc6bde','option') ): ?>
 								<li>
@@ -281,7 +281,7 @@
 									</a>
 								</li>
 							<?php endif; ?>
-							
+
 							<!-- YouTube button -->
 							<?php if( get_field('wb_545c94fdc6bdf','option')  ): ?>
 								<li>
@@ -290,7 +290,7 @@
 									</a>
 								</li>
 							<?php endif; ?>
-							
+
 							<!-- Vimeo button -->
 							<?php if( get_field('wb_545c9510c6be0','option') ): ?>
 								<li>
@@ -305,7 +305,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="hb2">
 		<div class="bp1"></div>
 		<div class="bp5">
@@ -344,7 +344,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<?php if( get_field('field_552f9506a5452') === 'active') { ?>
 		<div class="hb3">
 		<div class="cntr" id="billboard">
@@ -425,11 +425,14 @@
 				} );
 			</script>
 -->
-			
+
 		</div>
 	</div>
+	<?php } else { ?>
+		<div class="hb3 no-billboard">
+		</div>
 	<?php } ?>
-	
+
 	<?php if( have_rows('field_551485d420169') ): ?>
 		<div class="hb4">
 			<div class="cntr">
@@ -457,11 +460,11 @@
 			</div>
 		</div>
 		<?php else :
-		
+
 		   echo '';
-		
+
 		endif;
 	?>
-</div>	
+</div>
 
 <div class="main">
