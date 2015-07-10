@@ -19,6 +19,12 @@ function webbird_theme_setup(){
     load_theme_textdomain('nickoservice', get_template_directory() . '/languages');
 }
 
+add_action('init', 'wb_load_acf_fields');
+
+function wb_load_acf_fields(){
+	include 'assets/acf/acf.php';
+}
+
 function webbird_show_full_tinymce( $args ) {
 	$args['wordpress_adv_hidden'] = false;
 	return $args;

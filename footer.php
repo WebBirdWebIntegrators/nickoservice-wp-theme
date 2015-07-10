@@ -68,7 +68,7 @@
 										</li>
 									<?php endwhile; ?>
 								</ul>
-							<?php endif; ?>			
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>
@@ -118,7 +118,7 @@
 		<div class="cntr">
 			<div class="social-media">
 				<ul class="social">
-				
+
 					<!-- Facebook button -->
 					<?php if( get_field('wb_545c945b914e2','option') ) : ?>
 						<li>
@@ -127,7 +127,7 @@
 							</a>
 						</li>
 					<?php endif; ?>
-					
+
 					<!-- Twitter button -->
 					<?php if( get_field('wb_545c932b4c1e4','option') ) : ?>
 						<li class="twitter">
@@ -136,7 +136,7 @@
 							</a>
 						</li>
 					<?php endif; ?>
-					
+
 					<!-- Linked button -->
 					<?php if( get_field('wb_545c94a6c6bdc','option') ) : ?>
 						<li>
@@ -145,7 +145,7 @@
 							</a>
 						</li>
 					<?php endif; ?>
-					
+
 					<!-- Google+ button -->
 					<?php if( get_field('wb_54fc529402a0b','option') ): ?>
 						<li class="twitter">
@@ -154,7 +154,7 @@
 							</a>
 						</li>
 					<?php endif; ?>
-					
+
 					<!-- Instagram button -->
 					<?php if( get_field('wb_545c94bcc6bdd','option') ): ?>
 						<li>
@@ -163,7 +163,7 @@
 							</a>
 						</li>
 					<?php endif; ?>
-					
+
 					<!-- Pinterest button -->
 					<?php if( get_field('wb_545c94ebc6bde','option') ): ?>
 						<li>
@@ -172,7 +172,7 @@
 							</a>
 						</li>
 					<?php endif; ?>
-					
+
 					<!-- YouTube button -->
 					<?php if( get_field('wb_545c94fdc6bdf','option')  ): ?>
 						<li>
@@ -181,7 +181,7 @@
 							</a>
 						</li>
 					<?php endif; ?>
-					
+
 					<!-- Vimeo button -->
 					<?php if( get_field('wb_545c9510c6be0','option') ): ?>
 						<li>
@@ -194,7 +194,7 @@
 			</div>
 			<div class="copyrights">
 				<?php {
-					$all_rights_reserved = '&copy;' . date("Y") . ' - Alle rechten voorbehouden'; 
+					$all_rights_reserved = '&copy;' . date("Y") . ' - Alle rechten voorbehouden';
 					$footer_copyrights = array(
 						'theme_location'  => 'footer-copyrights',
 						'menu'            => 'footer-copyrights',
@@ -235,6 +235,13 @@
 <!-- End Google Analytics implementation -->
 
 </div>
+
+<!-- Custom Body Code -->
+<?php
+	if( get_field('wbts__custom_body_code__code', 'option') ) {
+		echo get_field('wbts__custom_body_code__code', 'option');
+	}
+?>
 
 <?php wp_footer(); ?>
 
