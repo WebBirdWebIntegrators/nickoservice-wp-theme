@@ -51,6 +51,14 @@ function webbird_custom_image_sizes( $sizes ) {
     ) );
 }
 
+function wpse71451_enqueue_comment_reply() {
+    if ( get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
+}
+// Hook into comment_form_before
+add_action( 'comment_form_before', 'wpse71451_enqueue_comment_reply' );
+
 // Auto create menus
 $menu_header_mnav = 'Header - Main navigation';
 $menu_header_mnav_exists = wp_get_nav_menu_object( $menu_header_mnav );
